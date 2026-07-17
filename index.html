@@ -57,9 +57,13 @@ a:hover{color:#B98407;}
     margin: 16px 0 10px !important;
   }
   .hero-img-container {
-    height: auto !important;
-    max-height: 280px !important;
+    height: 260px !important;
     margin-top: 12px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .hero-img-container img {
+    max-height: 260px !important;
   }
 
   /* Buy more save more band */
@@ -112,8 +116,12 @@ a:hover{color:#B98407;}
     align-items: center !important;
   }
   .buy-img-container {
-    height: auto !important;
-    max-height: 280px !important;
+    height: 260px !important;
+    width: 100% !important;
+    overflow: hidden !important;
+  }
+  .buy-img-container img {
+    max-height: 260px !important;
   }
 
   /* Testimonials */
@@ -163,17 +171,31 @@ a:hover{color:#B98407;}
     gap: 8px !important;
   }
 
-  /* Sticky CTA */
+  /* Sticky CTA — compact single row */
   .sticky-cta-inner {
-    flex-direction: column !important;
-    text-align: center !important;
-    padding: 12px 16px !important;
+    padding: 8px 14px !important;
     gap: 10px !important;
+    flex-wrap: nowrap !important;
   }
-  .sticky-cta-inner > div {
-    flex-direction: column !important;
-    align-items: center !important;
-    gap: 4px !important;
+  /* hide logo circle */
+  .sticky-cta-inner > div:first-child > span {
+    display: none !important;
+  }
+  /* hide sub-description line, keep product name */
+  .sticky-cta-inner > div:first-child > div > div:last-child {
+    display: none !important;
+  }
+  .sticky-cta-inner > div:first-child > div > div:first-child {
+    font-size: 13px !important;
+    line-height: 1.25 !important;
+  }
+  /* drop secondary button, keep only Buy Now */
+  .sticky-cta-inner > div:last-child > a:last-child {
+    display: none !important;
+  }
+  .sticky-cta-inner > div:last-child > a:first-child {
+    padding: 10px 18px !important;
+    white-space: nowrap !important;
   }
 }
 </style>
