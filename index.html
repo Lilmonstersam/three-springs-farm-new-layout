@@ -17,6 +17,15 @@ a{color:#4D8D41;text-decoration:none;}
 a:hover{color:#EEB11F;}
 @keyframes slideUp{from{transform:translateY(100%);}to{transform:translateY(0);}}
 
+/* Dropdown submenus */
+.main-nav .has-sub{position:relative;display:flex;align-items:center;padding-bottom:16px;margin-bottom:-16px;}
+.main-nav .has-sub > a::after{content:"";display:inline-block;margin-left:7px;vertical-align:middle;border:4px solid transparent;border-top-color:currentColor;transform:translateY(2px);}
+.main-nav .subnav{position:absolute;top:100%;left:0;min-width:250px;background:#FFFFFF;border:1px solid #E4DFD2;border-radius:12px;box-shadow:0 14px 30px rgba(31,92,45,0.14);padding:8px;display:none;flex-direction:column;gap:2px;z-index:50;}
+.main-nav .subnav-right{left:auto;right:0;}
+.main-nav .has-sub:hover .subnav,.main-nav .has-sub:focus-within .subnav{display:flex;}
+.main-nav .subnav a{display:block;font-size:13.5px;font-weight:700;color:#26302A;padding:10px 12px;border-radius:8px;white-space:nowrap;}
+.main-nav .subnav a:hover{background:#FAF8F2;color:#4D8D41;}
+
 /* Mobile overrides */
 @media (max-width: 768px) {
   /* Utility Bar */
@@ -34,6 +43,13 @@ a:hover{color:#EEB11F;}
   /* Navigation */
   .desktop-link {
     display: none !important;
+  }
+  .main-nav .subnav {
+    display: none !important;
+  }
+  .main-nav .has-sub {
+    padding-bottom: 0 !important;
+    margin-bottom: 0 !important;
   }
   .nav-container {
     padding: 12px 16px !important;
@@ -222,12 +238,25 @@ a:hover{color:#EEB11F;}
     <div style="display:flex;align-items:center;gap:10px;">
       <img src="uploads/logo.jpeg" alt="Three Springs Farm logo" style="width:44px;height:44px;border-radius:50%;object-fit:cover;">
     </div>
-    <nav style="display:flex;align-items:center;gap:26px;font-weight:700;font-size:14px;">
+    <nav class="main-nav" style="display:flex;align-items:center;gap:26px;font-weight:700;font-size:14px;">
       <a class="desktop-link" href="#benefits" style="color:#26302A;" style-hover="color:#4D8D41;">BENEFITS</a>
       <a class="desktop-link" href="#faq" style="color:#26302A;" style-hover="color:#4D8D41;">FAQ</a>
       <a class="desktop-link" href="#about" style="color:#26302A;" style-hover="color:#4D8D41;">ABOUT</a>
-      <a class="desktop-link" href="#buy" style="color:#26302A;" style-hover="color:#4D8D41;">STOCKISTS</a>
-      <a href="#buy" style="background:#EEB11F;color:#1B2A1E;padding:10px 20px;border-radius:999px;" style-hover="background:#D99C12;color:#1B2A1E;">BUY ONLINE</a>
+      <a class="desktop-link" href="https://threespringsfarm.com.au/stockists/" style="color:#26302A;" style-hover="color:#4D8D41;">BUY IN STORE</a>
+      <div class="desktop-link has-sub">
+        <a href="https://threespringsfarm.com.au/contact/" style="color:#26302A;" style-hover="color:#4D8D41;">CONTACT US</a>
+        <div class="subnav">
+          <a href="https://threespringsfarm.com.au/contact/">Contact Us</a>
+          <a href="https://threespringsfarm.com.au/contact/wholesale-enquiries/">Wholesale Enquiries</a>
+        </div>
+      </div>
+      <div class="has-sub">
+        <a href="https://threespringsfarm.com.au/buy-now/" style="background:#EEB11F;color:#1B2A1E;padding:10px 20px;border-radius:999px;" style-hover="background:#D99C12;color:#1B2A1E;">BUY ONLINE</a>
+        <div class="subnav subnav-right">
+          <a href="https://threespringsfarm.com.au/buy-now/">Buy Online</a>
+          <a href="https://threespringsfarm.com.au/buy-now/?add-to-cart=1598">Subscription</a>
+        </div>
+      </div>
     </nav>
   </div>
 </header>
@@ -569,7 +598,8 @@ a:hover{color:#EEB11F;}
         <a href="#buy" style="color:#B9CBB0;" style-hover="color:#EEB11F;">Buy Now</a>
         <a href="#buy" style="color:#B9CBB0;" style-hover="color:#EEB11F;">Stockists</a>
         <a href="#about" style="color:#B9CBB0;" style-hover="color:#EEB11F;">About Three Springs Farm</a>
-        <a href="#buy" style="color:#B9CBB0;" style-hover="color:#EEB11F;">Contact Us</a>
+        <a href="https://threespringsfarm.com.au/contact/" style="color:#B9CBB0;" style-hover="color:#EEB11F;">Contact Us</a>
+        <a href="https://threespringsfarm.com.au/contact/wholesale-enquiries/" style="color:#B9CBB0;" style-hover="color:#EEB11F;">Wholesale Enquiries</a>
       </div>
     </div>
     <div>
