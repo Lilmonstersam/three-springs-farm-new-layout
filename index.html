@@ -12,7 +12,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="anonymous">
 <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;600;700&amp;family=Nunito+Sans:wght@400;600;700;800&amp;display=swap" rel="stylesheet">
 <style>
-body{margin:0;background:#FAF8F2;color:#26302A;font-family:'Nunito Sans',system-ui,sans-serif;}
+body{margin:0;background:#FFFFFF;color:#26302A;font-family:'Nunito Sans',system-ui,sans-serif;}
 a{color:#4D8D41;text-decoration:none;}
 a:hover{color:#EEB11F;}
 @keyframes slideUp{from{transform:translateY(100%);}to{transform:translateY(0);}}
@@ -24,7 +24,7 @@ a:hover{color:#EEB11F;}
 .main-nav .subnav-right{left:auto;right:0;}
 .main-nav .has-sub:hover .subnav,.main-nav .has-sub:focus-within .subnav{display:flex;}
 .main-nav .subnav a{display:block;font-size:13.5px;font-weight:700;color:#26302A;padding:10px 12px;border-radius:8px;white-space:nowrap;}
-.main-nav .subnav a:hover{background:#FAF8F2;color:#4D8D41;}
+.main-nav .subnav a:hover{background:#F2F4F1;color:#4D8D41;}
 
 /* Mobile overrides */
 @media (max-width: 768px) {
@@ -144,6 +144,11 @@ a:hover{color:#EEB11F;}
   .testimonials-container {
     padding: 48px 16px !important;
   }
+  .testimonial-carousel > sc-if > div,
+  .testimonial-carousel div[style*="min-height"] {
+    padding: 24px 18px !important;
+    min-height: 0 !important;
+  }
   .testimonials-container h2 {
     font-size: 28px !important;
     margin-bottom: 24px !important;
@@ -165,6 +170,15 @@ a:hover{color:#EEB11F;}
   }
   .about-container h2 {
     font-size: 26px !important;
+  }
+
+  /* Memberships */
+  .memberships-container {
+    padding: 36px 16px !important;
+  }
+  .memberships-grid {
+    grid-template-columns: 1fr 1fr !important;
+    gap: 16px !important;
   }
 
   /* FAQ */
@@ -251,7 +265,7 @@ a:hover{color:#EEB11F;}
         </div>
       </div>
       <div class="has-sub">
-        <a href="https://threespringsfarm.com.au/buy-now/" style="background:#EEB11F;color:#1B2A1E;padding:10px 20px;border-radius:999px;" style-hover="background:#D99C12;color:#1B2A1E;">BUY ONLINE</a>
+        <a href="https://threespringsfarm.com.au/buy-now/" style="background:#EEB11F;color:#1B2A1E;padding:10px 20px;border-radius:2px;" style-hover="background:#D99C12;color:#1B2A1E;">BUY ONLINE</a>
         <div class="subnav subnav-right">
           <a href="https://threespringsfarm.com.au/buy-now/">Buy Online</a>
           <a href="https://threespringsfarm.com.au/buy-now/?add-to-cart=1598">Subscription</a>
@@ -262,10 +276,10 @@ a:hover{color:#EEB11F;}
 </header>
 
 <!-- ============ HERO ============ -->
-<section data-screen-label="Hero" style="background:linear-gradient(160deg,#4D8D41 0%,#4D8D41 70%,#4D8D41 100%);color:#FFFFFF;">
+<section data-screen-label="Hero" style="position:relative;background-image:linear-gradient(100deg,rgba(31,64,25,0.88) 0%,rgba(44,83,37,0.72) 45%,rgba(44,83,37,0.35) 100%),url('uploads/imgi_44_homepage-banner.jpg');background-size:cover;background-position:center;color:#FFFFFF;">
   <div class="hero-container" style="max-width:1180px;margin:0 auto;padding:72px 24px 80px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:56px;align-items:center;">
     <div>
-      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);border-radius:999px;padding:7px 16px;font-size:13px;font-weight:700;letter-spacing:0.4px;">
+      <div style="display:inline-flex;align-items:center;gap:10px;background:rgba(255,255,255,0.12);border:1px solid rgba(255,255,255,0.25);border-radius:2px;padding:7px 16px;font-size:13px;font-weight:700;letter-spacing:0.4px;">
         <span style="width:8px;height:8px;border-radius:50%;background:#EEB11F;"></span>
         Australian Certified Organic — ACO 1330 · AUST L 286865
       </div>
@@ -274,8 +288,8 @@ a:hover{color:#EEB11F;}
       <p style="font-size:17px;line-height:1.65;color:#E4EFE1;max-width:52ch;margin:0 0 12px;">A concentrate of certified organic turmeric with no synthetic or artificial additives. As a liquid, it is absorbed more rapidly than capsules or tablets.</p>
       <p style="font-size:17px;line-height:1.65;color:#E4EFE1;max-width:52ch;margin:0 0 30px;">Simply blend 5 ml into water, milk or coffee for an appetising daily turmeric drink.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;font-size:15px;padding:15px 32px;border-radius:999px;" style-hover="background:#D99C12;color:#1B2A1E;">Buy Now</a>
-        <a href="#buy" style="border:2px solid rgba(255,255,255,0.55);color:#FFFFFF;font-weight:700;font-size:15px;padding:13px 30px;border-radius:999px;" style-hover="border-color:#EEB11F;color:#EEB11F;">Find a Store</a>
+        <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;font-size:15px;padding:15px 32px;border-radius:2px;" style-hover="background:#D99C12;color:#1B2A1E;">Buy Now</a>
+        <a href="#buy" style="border:2px solid rgba(255,255,255,0.55);color:#FFFFFF;font-weight:700;font-size:15px;padding:13px 30px;border-radius:2px;" style-hover="border-color:#EEB11F;color:#EEB11F;">Find a Store</a>
       </div>
     </div>
     <div class="hero-img-container" style="height:460px;display:flex;align-items:center;justify-content:center;">
@@ -289,8 +303,8 @@ a:hover{color:#EEB11F;}
   <div class="save-band-container" style="max-width:1180px;margin:0 auto;padding:26px 24px;display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap;">
     <p style="margin:0;font-family:Quicksand,sans-serif;font-weight:700;font-size:24px;color:#3A2E08;">Buy more, save more — save up to 25%</p>
     <div style="display:flex;gap:12px;flex-wrap:wrap;">
-      <a href="#buy" style="background:#4D8D41;color:#FFFFFF;font-weight:700;font-size:14px;padding:12px 26px;border-radius:999px;" style-hover="background:#2C5325;color:#FFFFFF;">Purchase Online</a>
-      <a href="#buy" style="border:2px solid #3A2E08;color:#3A2E08;font-weight:700;font-size:14px;padding:10px 24px;border-radius:999px;" style-hover="background:#3A2E08;color:#EEB11F;">Subscribe to Monthly Order</a>
+      <a href="#buy" style="background:#4D8D41;color:#FFFFFF;font-weight:700;font-size:14px;padding:12px 26px;border-radius:2px;" style-hover="background:#2C5325;color:#FFFFFF;">Purchase Online</a>
+      <a href="#buy" style="border:2px solid #3A2E08;color:#3A2E08;font-weight:700;font-size:14px;padding:10px 24px;border-radius:2px;" style-hover="background:#3A2E08;color:#EEB11F;">Subscribe to Monthly Order</a>
     </div>
   </div>
 </section>
@@ -300,25 +314,19 @@ a:hover{color:#EEB11F;}
   <div class="why-choose-container" style="max-width:1180px;margin:0 auto;padding:76px 24px;">
     <h2 style="font-family:Quicksand,sans-serif;font-weight:700;font-size:34px;color:#4D8D41;text-align:center;margin:0 0 14px;">Why Choose Complete 3 Turmeric™ Liquid Extract?</h2>
     <p style="max-width:68ch;margin:0 auto 46px;text-align:center;font-size:17px;line-height:1.7;color:#4A554C;text-wrap:pretty;">Unlike many other turmeric extracts, ours is made from fresh certified organic turmeric grown on our farm from premium rootstock selected after each harvest. It is a full spectrum extract with the whole root's actives as found in nature — nothing is stripped out, and we never use dried powder or synthetic ingredients.</p>
-    <div class="why-choose-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;">
-      <div style="text-align:center;padding:28px 22px;border-radius:16px;background:#FAF8F2;">
-        <div style="width:56px;height:56px;margin:0 auto 14px;border-radius:50%;background:#EAF2E6;display:flex;align-items:center;justify-content:center;">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4D8D41" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="9"></circle><line x1="5" y1="5" x2="19" y2="19"></line></svg>
-        </div>
+    <div class="why-choose-grid" style="display:grid;grid-template-columns:repeat(3,1fr);gap:24px;align-items:start;">
+      <div style="text-align:center;padding:28px 22px;border:1px solid #E8EBE6;border-radius:4px;background:#FFFFFF;display:flex;flex-direction:column;">
+        <div class="usp-icon" style="height:96px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;"><img src="uploads/imgi_8_usp-01.jpeg" alt="No black pepper needed, full spectrum turmeric extract" style="max-height:96px;max-width:170px;width:auto;object-fit:contain;display:block;"></div>
         <h3 style="font-family:Quicksand,sans-serif;font-weight:700;font-size:18px;color:#4D8D41;margin:0 0 8px;">No black pepper required</h3>
         <p style="margin:0;font-size:14.5px;line-height:1.6;color:#4A554C;">Full-spectrum liquid extraction means no piperine additive is needed.</p>
       </div>
-      <div style="text-align:center;padding:28px 22px;border-radius:16px;background:#FAF8F2;">
-        <div style="width:56px;height:56px;margin:0 auto 14px;border-radius:50%;background:#EAF2E6;display:flex;align-items:center;justify-content:center;">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4D8D41" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 L20 7 V12 C20 17 16.5 20 12 21 C7.5 20 4 17 4 12 V7 Z"></path></svg>
-        </div>
+      <div style="text-align:center;padding:28px 22px;border:1px solid #E8EBE6;border-radius:4px;background:#FFFFFF;display:flex;flex-direction:column;">
+        <div class="usp-icon" style="height:96px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;"><img src="uploads/imgi_25_aco-logo-white-bg-800x473.jpeg" alt="Australian Certified Organic, ACO certification number 1330" style="max-height:96px;max-width:170px;width:auto;object-fit:contain;display:block;"></div>
         <h3 style="font-family:Quicksand,sans-serif;font-weight:700;font-size:18px;color:#4D8D41;margin:0 0 8px;">100% certified organic</h3>
         <p style="margin:0;font-size:14.5px;line-height:1.6;color:#4A554C;">Grown and extracted on our ACO 1330 certified farm in the Northern Rivers.</p>
       </div>
-      <div style="text-align:center;padding:28px 22px;border-radius:16px;background:#FAF8F2;">
-        <div style="width:56px;height:56px;margin:0 auto 14px;border-radius:50%;background:#EAF2E6;display:flex;align-items:center;justify-content:center;">
-          <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#4D8D41" stroke-width="2" stroke-linecap="round"><path d="M12 3 C12 3 6 10 6 14 a6 6 0 0 0 12 0 C18 10 12 3 12 3 Z"></path></svg>
-        </div>
+      <div style="text-align:center;padding:28px 22px;border:1px solid #E8EBE6;border-radius:4px;background:#FFFFFF;display:flex;flex-direction:column;">
+        <div class="usp-icon" style="height:96px;margin:0 auto 18px;display:flex;align-items:center;justify-content:center;"><img src="uploads/imgi_10_usp-03.jpeg" alt="Rapid absorption of liquid turmeric extract" style="max-height:96px;max-width:170px;width:auto;object-fit:contain;display:block;"></div>
         <h3 style="font-family:Quicksand,sans-serif;font-weight:700;font-size:18px;color:#4D8D41;margin:0 0 8px;">Faster absorption</h3>
         <p style="margin:0;font-size:14.5px;line-height:1.6;color:#4A554C;">Liquid extracts are absorbed more rapidly than capsules or tablets.</p>
       </div>
@@ -327,7 +335,7 @@ a:hover{color:#EEB11F;}
 </section>
 
 <!-- ============ CONSOLIDATED BENEFITS SECTION ============ -->
-<section id="benefits" data-screen-label="Benefits (new consolidated)" style="background:#FAF8F2;">
+<section id="benefits" data-screen-label="Benefits (new consolidated)" style="background:#FFFFFF;">
   <div class="benefits-container" style="max-width:1180px;margin:0 auto;padding:80px 24px 0;">
     <h2 style="font-family:Quicksand,sans-serif;font-weight:700;font-size:36px;color:#4D8D41;text-align:center;margin:0 0 18px;text-wrap:pretty;">How Can You Benefit From Complete 3 Turmeric™?</h2>
     <p style="max-width:65ch;margin:0 auto 52px;text-align:center;font-size:17px;line-height:1.75;color:#4A554C;text-wrap:pretty;">Turmeric has been used for centuries in Western, Chinese and Ayurvedic herbal medicine, and remains one of the most researched medicinal plants in the world. Complete 3 Turmeric™ Liquid Extract preserves curcumin and all of the whole root's actives in their natural proportions, in a liquid form that is absorbed more rapidly than capsules or tablets.</p>
@@ -444,7 +452,7 @@ a:hover{color:#EEB11F;}
 
     <!-- Trust strip -->
     <div style="display:flex;align-items:center;justify-content:center;gap:14px;flex-wrap:wrap;margin:40px auto 0;padding:16px 28px;max-width:900px;border-top:1px solid #E4DFD2;border-bottom:1px solid #E4DFD2;">
-      <span style="display:inline-flex;align-items:center;justify-content:center;width:38px;height:38px;border-radius:50%;background:#4D8D41;color:#FFFFFF;font-size:10px;font-weight:800;letter-spacing:0.5px;">ACO</span>
+      <img src="uploads/imgi_25_aco-logo-white-bg-800x473.jpeg" alt="Australian Certified Organic, ACO certification number 1330" style="height:46px;width:auto;object-fit:contain;flex:none;display:block;">
       <p style="margin:0;font-size:14px;line-height:1.55;color:#4A554C;text-align:center;max-width:62ch;">Trusted for centuries in Western Herbal Medicine, Traditional Chinese Medicine and Ayurveda. Grown and extracted on our certified organic farm (ACO 1330).</p>
       <span style="font-family:ui-monospace,Menlo,monospace;font-size:12px;font-weight:600;color:#4D8D41;background:#EAF2E6;border-radius:6px;padding:5px 10px;white-space:nowrap;">AUST L 286865</span>
     </div>
@@ -456,8 +464,8 @@ a:hover{color:#EEB11F;}
       <div style="max-width:1180px;margin:0 auto;padding:40px 24px;display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;">
         <p style="margin:0;font-family:Quicksand,sans-serif;font-weight:700;font-size:22px;line-height:1.4;color:#3A2E08;max-width:48ch;">Add turmeric to your daily routine the easy way: just 5 ml in water, milk or coffee.</p>
         <div style="display:flex;gap:14px;flex-wrap:wrap;">
-          <a href="#buy" style="background:#4D8D41;color:#FFFFFF;font-weight:800;font-size:15px;padding:15px 30px;border-radius:999px;" style-hover="background:#2C5325;color:#FFFFFF;">Buy Complete 3 Turmeric™</a>
-          <a href="#buy" style="border:2px solid #3A2E08;color:#3A2E08;font-weight:700;font-size:15px;padding:13px 28px;border-radius:999px;" style-hover="background:#3A2E08;color:#EEB11F;">Subscribe and Save</a>
+          <a href="#buy" style="background:#4D8D41;color:#FFFFFF;font-weight:800;font-size:15px;padding:15px 30px;border-radius:2px;" style-hover="background:#2C5325;color:#FFFFFF;">Buy Complete 3 Turmeric™</a>
+          <a href="#buy" style="border:2px solid #3A2E08;color:#3A2E08;font-weight:700;font-size:15px;padding:13px 28px;border-radius:2px;" style-hover="background:#3A2E08;color:#EEB11F;">Subscribe and Save</a>
         </div>
       </div>
     </div>
@@ -469,8 +477,8 @@ a:hover{color:#EEB11F;}
       <div style="max-width:1180px;margin:0 auto;padding:44px 24px;text-align:center;">
         <p style="margin:0 0 22px;font-family:Quicksand,sans-serif;font-weight:700;font-size:23px;line-height:1.4;color:#FFFFFF;">Add turmeric to your daily routine the easy way:<br><span style="color:#EEB11F;">just 5 ml in water, milk or coffee.</span></p>
         <div style="display:flex;gap:14px;flex-wrap:wrap;justify-content:center;">
-          <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;font-size:15px;padding:15px 30px;border-radius:999px;" style-hover="background:#D99C12;color:#1B2A1E;">Buy Complete 3 Turmeric™</a>
-          <a href="#buy" style="border:2px solid rgba(255,255,255,0.6);color:#FFFFFF;font-weight:700;font-size:15px;padding:13px 28px;border-radius:999px;" style-hover="border-color:#EEB11F;color:#EEB11F;">Subscribe and Save</a>
+          <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;font-size:15px;padding:15px 30px;border-radius:2px;" style-hover="background:#D99C12;color:#1B2A1E;">Buy Complete 3 Turmeric™</a>
+          <a href="#buy" style="border:2px solid rgba(255,255,255,0.6);color:#FFFFFF;font-weight:700;font-size:15px;padding:13px 28px;border-radius:2px;" style-hover="border-color:#EEB11F;color:#EEB11F;">Subscribe and Save</a>
         </div>
       </div>
     </div>
@@ -487,8 +495,8 @@ a:hover{color:#EEB11F;}
       <h2 style="font-family:Quicksand,sans-serif;font-weight:700;font-size:32px;color:#4D8D41;margin:0 0 16px;text-wrap:pretty;">Where Can You Buy Complete 3 Turmeric™ Liquid Extract?</h2>
       <p style="font-size:16.5px;line-height:1.7;color:#4A554C;margin:0 0 24px;">Buy online or from one of our 65+ stockist partners throughout Australia. We also offer a discounted monthly subscription for the ongoing benefits of Complete 3 Turmeric™ Liquid Extract.</p>
       <div style="display:flex;gap:14px;flex-wrap:wrap;">
-        <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;font-size:15px;padding:14px 30px;border-radius:999px;" style-hover="background:#D99C12;color:#1B2A1E;">Buy Now</a>
-        <a href="#buy" style="border:2px solid #4D8D41;color:#4D8D41;font-weight:700;font-size:15px;padding:12px 28px;border-radius:999px;" style-hover="background:#4D8D41;color:#FFFFFF;">Find a Store</a>
+        <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;font-size:15px;padding:14px 30px;border-radius:2px;" style-hover="background:#D99C12;color:#1B2A1E;">Buy Now</a>
+        <a href="#buy" style="border:2px solid #4D8D41;color:#4D8D41;font-weight:700;font-size:15px;padding:12px 28px;border-radius:2px;" style-hover="background:#4D8D41;color:#FFFFFF;">Find a Store</a>
       </div>
       <p style="margin:22px 0 0;font-size:12.5px;line-height:1.6;color:#8A948B;font-style:italic;">Always read the label. Follow the directions for use. If symptoms persist, talk to your healthcare professional. Contains ethanol. AUST L 286865.</p>
     </div>
@@ -496,29 +504,83 @@ a:hover{color:#EEB11F;}
 </section>
 
 <!-- ============ TESTIMONIALS ============ -->
-<section data-screen-label="Testimonials" style="background:#FAF8F2;">
+<section data-screen-label="Testimonials" style="background:#FFFFFF;">
   <div class="testimonials-container" style="max-width:1180px;margin:0 auto;padding:76px 24px;">
     <h2 style="font-family:Quicksand,sans-serif;font-weight:700;font-size:34px;color:#4D8D41;text-align:center;margin:0 0 46px;">What Our Customers Say</h2>
-    <div class="testimonials-grid" style="display:grid;grid-template-columns:1fr 1fr;gap:24px;">
-      <div class="testimonial-card-row-span" style="background:#FFFFFF;border-radius:18px;padding:30px;box-shadow:0 2px 10px rgba(31,92,45,0.06);grid-row:span 2;">
-        <div style="color:#EEB11F;font-size:16px;letter-spacing:3px;margin-bottom:14px;">★★★★★</div>
-        <p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#4A554C;">"I was diagnosed with Inflammatory Arthritis two and a half years ago. Not wanting to take conventional medication, I began exploring alternative options. Turmeric appeared to be high on the list, so I tried a course of Turmeric Tablets which had some effect but nothing of great significance. I was fortunate enough to hear of Three Springs Farm doing trials on Turmeric Liquid on their organic farm. I started a trial on the product and that's where my life has changed. I have been using Complete 3 Turmeric Liquid Extract for almost a year now, taking 5–10 mls each morning with almond milk. The result in pain relief has been incredible, enabling me to resume exercising and to do all of the things that I once did prior to diagnosis. I can't thank the owners of Three Springs Farm enough."</p>
-        <p style="margin:0;font-weight:800;font-size:14px;color:#4D8D41;">Elaine, Bronte</p>
-      </div>
-      <div style="background:#FFFFFF;border-radius:18px;padding:30px;box-shadow:0 2px 10px rgba(31,92,45,0.06);">
-        <div style="color:#EEB11F;font-size:16px;letter-spacing:3px;margin-bottom:14px;">★★★★★</div>
-        <p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#4A554C;">"Constant lifting, bending and kneeling was taking its toll on my joints and energy. A friend recommended Complete 3 Turmeric extract instead of over the counter pain killers that had only given me limited relief. The stiffness and aches have gone away and I feel a renewed sense of wellbeing."</p>
-        <p style="margin:0;font-weight:800;font-size:14px;color:#4D8D41;">Kathryn, Lismore</p>
-      </div>
-      <div style="background:#FFFFFF;border-radius:18px;padding:30px;box-shadow:0 2px 10px rgba(31,92,45,0.06);">
-        <div style="color:#EEB11F;font-size:16px;letter-spacing:3px;margin-bottom:14px;">★★★★★</div>
-        <p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#4A554C;">"For the past two years I've had to limit physical tasks and take prescription anti-inflammatories because of problems in my shoulders and lower back. Since taking Complete 3 Turmeric I'm again enjoying work in the great outdoors free from pain and unpleasant side effects."</p>
-        <p style="margin:0;font-weight:800;font-size:14px;color:#4D8D41;">Andrew, Terania Creek</p>
-      </div>
-      <div class="testimonial-card-col-span" style="background:#FFFFFF;border-radius:18px;padding:30px;box-shadow:0 2px 10px rgba(31,92,45,0.06);grid-column:span 2;">
-        <div style="color:#EEB11F;font-size:16px;letter-spacing:3px;margin-bottom:14px;">★★★★★</div>
-        <p style="margin:0 0 18px;font-size:15px;line-height:1.7;color:#4A554C;">"I take turmeric for joint pain and stiffness — I consider it a natural anti-inflammatory, so now I'm taking less than 5ml morning and night. I love your product and I hope your business is growing well."</p>
-        <p style="margin:0;font-weight:800;font-size:14px;color:#4D8D41;">Sally, Victoria</p>
+    <div class="testimonial-carousel" style="position:relative;max-width:820px;margin:0 auto;">
+      <sc-if value="{{ tShow0 }}" hint-placeholder-val="{{ true }}">
+        <div style="background:#FFFFFF;border:1px solid #E8EBE6;border-radius:4px;padding:36px 38px;min-height:300px;display:flex;flex-direction:column;">
+          <div style="color:#EEB11F;font-size:17px;letter-spacing:3px;margin-bottom:16px;">★★★★★</div>
+          <p style="margin:0 0 22px;font-size:16px;line-height:1.75;color:#4A554C;flex:1;">"I was diagnosed with Inflammatory Arthritis two and a half years ago. Not wanting to take conventional medication, I began exploring alternative options. Turmeric appeared to be high on the list, so I tried a course of Turmeric Tablets which had some effect but nothing of great significance. I was fortunate enough to hear of Three Springs Farm doing trials on Turmeric Liquid on their organic farm. I started a trial on the product and that's where my life has changed. I have been using Complete 3 Turmeric Liquid Extract for almost a year now, taking 5–10 mls each morning with almond milk. The result in pain relief has been incredible, enabling me to resume exercising and to do all of the things that I once did prior to diagnosis. I can't thank the owners of Three Springs Farm enough."</p>
+          <div style="border-top:1px solid #E8EBE6;padding-top:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+            <img src="uploads/bottle-single.png" alt="" style="width:34px;height:46px;object-fit:contain;flex:none;">
+            <div>
+              <p style="margin:0;font-weight:800;font-size:15px;color:#4D8D41;">Elaine, Bronte</p>
+              <p style="margin:2px 0 0;font-size:13px;color:#7A857C;">Purchased: Complete 3 Turmeric™ Liquid Extract · 200 ml</p>
+            </div>
+            <span style="margin-left:auto;font-size:11.5px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:#4D8D41;background:#EAF2E6;border-radius:2px;padding:5px 10px;">Verified purchase</span>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ tShow1 }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#FFFFFF;border:1px solid #E8EBE6;border-radius:4px;padding:36px 38px;min-height:300px;display:flex;flex-direction:column;">
+          <div style="color:#EEB11F;font-size:17px;letter-spacing:3px;margin-bottom:16px;">★★★★★</div>
+          <p style="margin:0 0 22px;font-size:16px;line-height:1.75;color:#4A554C;flex:1;">"Constant lifting, bending and kneeling was taking its toll on my joints and energy. A friend recommended Complete 3 Turmeric extract instead of over the counter pain killers that had only given me limited relief. The stiffness and aches have gone away and I feel a renewed sense of wellbeing."</p>
+          <div style="border-top:1px solid #E8EBE6;padding-top:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+            <img src="uploads/bottle-single.png" alt="" style="width:34px;height:46px;object-fit:contain;flex:none;">
+            <div>
+              <p style="margin:0;font-weight:800;font-size:15px;color:#4D8D41;">Kathryn, Lismore</p>
+              <p style="margin:2px 0 0;font-size:13px;color:#7A857C;">Purchased: Complete 3 Turmeric™ Liquid Extract · 200 ml</p>
+            </div>
+            <span style="margin-left:auto;font-size:11.5px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:#4D8D41;background:#EAF2E6;border-radius:2px;padding:5px 10px;">Verified purchase</span>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ tShow2 }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#FFFFFF;border:1px solid #E8EBE6;border-radius:4px;padding:36px 38px;min-height:300px;display:flex;flex-direction:column;">
+          <div style="color:#EEB11F;font-size:17px;letter-spacing:3px;margin-bottom:16px;">★★★★★</div>
+          <p style="margin:0 0 22px;font-size:16px;line-height:1.75;color:#4A554C;flex:1;">"For the past two years I've had to limit physical tasks and take prescription anti-inflammatories because of problems in my shoulders and lower back. Since taking Complete 3 Turmeric I'm again enjoying work in the great outdoors free from pain and unpleasant side effects."</p>
+          <div style="border-top:1px solid #E8EBE6;padding-top:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+            <img src="uploads/bottle-single.png" alt="" style="width:34px;height:46px;object-fit:contain;flex:none;">
+            <div>
+              <p style="margin:0;font-weight:800;font-size:15px;color:#4D8D41;">Andrew, Terania Creek</p>
+              <p style="margin:2px 0 0;font-size:13px;color:#7A857C;">Purchased: Complete 3 Turmeric™ Liquid Extract · 500 ml</p>
+            </div>
+            <span style="margin-left:auto;font-size:11.5px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:#4D8D41;background:#EAF2E6;border-radius:2px;padding:5px 10px;">Verified purchase</span>
+          </div>
+        </div>
+      </sc-if>
+      <sc-if value="{{ tShow3 }}" hint-placeholder-val="{{ false }}">
+        <div style="background:#FFFFFF;border:1px solid #E8EBE6;border-radius:4px;padding:36px 38px;min-height:300px;display:flex;flex-direction:column;">
+          <div style="color:#EEB11F;font-size:17px;letter-spacing:3px;margin-bottom:16px;">★★★★★</div>
+          <p style="margin:0 0 22px;font-size:16px;line-height:1.75;color:#4A554C;flex:1;">"I take turmeric for joint pain and stiffness. I consider it a natural anti-inflammatory, so now I'm taking less than 5ml morning and night. I love your product and I hope your business is growing well."</p>
+          <div style="border-top:1px solid #E8EBE6;padding-top:16px;display:flex;align-items:center;gap:14px;flex-wrap:wrap;">
+            <img src="uploads/bottle-single.png" alt="" style="width:34px;height:46px;object-fit:contain;flex:none;">
+            <div>
+              <p style="margin:0;font-weight:800;font-size:15px;color:#4D8D41;">Sally, Victoria</p>
+              <p style="margin:2px 0 0;font-size:13px;color:#7A857C;">Purchased: Complete 3 Turmeric™ Liquid Extract · Monthly subscription</p>
+            </div>
+            <span style="margin-left:auto;font-size:11.5px;font-weight:800;letter-spacing:0.6px;text-transform:uppercase;color:#4D8D41;background:#EAF2E6;border-radius:2px;padding:5px 10px;">Verified purchase</span>
+          </div>
+        </div>
+      </sc-if>
+      <div style="display:flex;align-items:center;justify-content:center;gap:18px;margin-top:26px;">
+        <button onClick="{{ tPrev }}" aria-label="Previous testimonial" style="width:42px;height:42px;border:1px solid #C9D2C6;border-radius:2px;background:#FFFFFF;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4D8D41" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+        </button>
+        <div class="testimonial-dots" style="display:flex;align-items:center;gap:8px;">
+        <sc-if value="{{ tDot0 }}" hint-placeholder-val="{{ true }}"><button onClick="{{ tGo0 }}" style="width:26px;height:8px;border:none;border-radius:2px;background:#4D8D41;cursor:pointer;padding:0;"></button></sc-if>
+        <sc-if value="{{ tDotOff0 }}" hint-placeholder-val="{{ false }}"><button onClick="{{ tGo0 }}" style="width:8px;height:8px;border:none;border-radius:2px;background:#D5DBD2;cursor:pointer;padding:0;"></button></sc-if>
+        <sc-if value="{{ tDot1 }}" hint-placeholder-val="{{ false }}"><button onClick="{{ tGo1 }}" style="width:26px;height:8px;border:none;border-radius:2px;background:#4D8D41;cursor:pointer;padding:0;"></button></sc-if>
+        <sc-if value="{{ tDotOff1 }}" hint-placeholder-val="{{ true }}"><button onClick="{{ tGo1 }}" style="width:8px;height:8px;border:none;border-radius:2px;background:#D5DBD2;cursor:pointer;padding:0;"></button></sc-if>
+        <sc-if value="{{ tDot2 }}" hint-placeholder-val="{{ false }}"><button onClick="{{ tGo2 }}" style="width:26px;height:8px;border:none;border-radius:2px;background:#4D8D41;cursor:pointer;padding:0;"></button></sc-if>
+        <sc-if value="{{ tDotOff2 }}" hint-placeholder-val="{{ true }}"><button onClick="{{ tGo2 }}" style="width:8px;height:8px;border:none;border-radius:2px;background:#D5DBD2;cursor:pointer;padding:0;"></button></sc-if>
+        <sc-if value="{{ tDot3 }}" hint-placeholder-val="{{ false }}"><button onClick="{{ tGo3 }}" style="width:26px;height:8px;border:none;border-radius:2px;background:#4D8D41;cursor:pointer;padding:0;"></button></sc-if>
+        <sc-if value="{{ tDotOff3 }}" hint-placeholder-val="{{ true }}"><button onClick="{{ tGo3 }}" style="width:8px;height:8px;border:none;border-radius:2px;background:#D5DBD2;cursor:pointer;padding:0;"></button></sc-if>
+        </div>
+        <button onClick="{{ tNext }}" aria-label="Next testimonial" style="width:42px;height:42px;border:1px solid #C9D2C6;border-radius:2px;background:#FFFFFF;cursor:pointer;display:flex;align-items:center;justify-content:center;flex:none;">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="#4D8D41" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+        </button>
       </div>
     </div>
   </div>
@@ -527,11 +589,32 @@ a:hover{color:#EEB11F;}
 <!-- ============ CERTIFIED ORGANIC ============ -->
 <section id="about" data-screen-label="Certified organic" style="background:#38692F;color:#E4EFE1;">
   <div class="about-container" style="max-width:900px;margin:0 auto;padding:76px 24px;text-align:center;">
-    <span style="display:inline-flex;align-items:center;justify-content:center;width:64px;height:64px;border-radius:50%;background:#4D8D41;color:#FFFFFF;font-size:13px;font-weight:800;letter-spacing:0.5px;margin-bottom:20px;">ACO</span>
+    <img src="uploads/imgi_25_aco-logo-white-bg-800x473.jpeg" alt="Australian Certified Organic, ACO certification number 1330" style="height:92px;width:auto;object-fit:contain;display:block;margin:0 auto 22px;background:#FFFFFF;padding:10px 14px;border-radius:4px;">
     <h2 style="font-family:Quicksand,sans-serif;font-weight:700;font-size:32px;color:#FFFFFF;margin:0 0 16px;">Three Springs Farm is Certified Organic</h2>
     <p style="font-size:16.5px;line-height:1.75;margin:0 0 14px;">Three Springs Farm is a certified horticultural operation in accordance with the Australian Certified Organic Standard — ACO 1330. All produce is grown without harmful chemicals, synthetic pesticides, herbicides, antibiotics, or genetic modification. Inspections and audits are conducted regularly.</p>
     <p style="font-size:14.5px;line-height:1.7;color:#B9CBB0;margin:0 0 28px;">Three Springs Farm acknowledges the traditional custodians of the Bundjalung Nation. We recognise their continuing connection to land, sea and waters. We pay our respects to elders past, present and future.</p>
-    <a href="#about" style="border:2px solid rgba(255,255,255,0.5);color:#FFFFFF;font-weight:700;font-size:14px;padding:12px 28px;border-radius:999px;display:inline-block;" style-hover="border-color:#EEB11F;color:#EEB11F;">Read More About Three Springs Farm</a>
+    <a href="#about" style="border:2px solid rgba(255,255,255,0.5);color:#FFFFFF;font-weight:700;font-size:14px;padding:12px 28px;border-radius:2px;display:inline-block;" style-hover="border-color:#EEB11F;color:#EEB11F;">Read More About Three Springs Farm</a>
+  </div>
+</section>
+
+<!-- ============ CERTIFICATIONS / MEMBERSHIPS ============ -->
+<section data-screen-label="Certifications and memberships" style="background:#FFFFFF;border-top:1px solid #E8EBE6;border-bottom:1px solid #E8EBE6;">
+  <div class="memberships-container" style="max-width:1180px;margin:0 auto;padding:48px 24px;">
+    <p style="margin:0 0 28px;text-align:center;font-size:12.5px;font-weight:800;letter-spacing:1.4px;text-transform:uppercase;color:#7A857C;">Certifications and memberships</p>
+    <div class="memberships-grid" style="display:grid;grid-template-columns:repeat(4,1fr);gap:24px;align-items:center;">
+      <div style="display:flex;align-items:center;justify-content:center;height:88px;padding:0 10px;">
+        <img src="uploads/memberships/imgi_13_nhaa-min.jpeg" alt="Naturopaths and Herbalists Association of Australia" style="max-height:78px;max-width:190px;width:auto;object-fit:contain;display:block;">
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;height:88px;padding:0 10px;">
+        <img src="uploads/memberships/imgi_12_tropo-min.jpeg" alt="Tropo, tropical fruits and produce association" style="max-height:78px;max-width:190px;width:auto;object-fit:contain;display:block;">
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;height:88px;padding:0 10px;">
+        <img src="uploads/memberships/imgi_14_NRF-Proud-Member-rgb-min.jpeg" alt="Northern Rivers Food proud member" style="max-height:78px;max-width:190px;width:auto;object-fit:contain;display:block;">
+      </div>
+      <div style="display:flex;align-items:center;justify-content:center;height:88px;padding:0 10px;">
+        <img src="uploads/memberships/imgi_35_Northern-Rivers-NSW-min-200x94.jpeg" alt="Northern Rivers NSW" style="max-height:78px;max-width:190px;width:auto;object-fit:contain;display:block;">
+      </div>
+    </div>
   </div>
 </section>
 
@@ -542,7 +625,7 @@ a:hover{color:#EEB11F;}
     <p style="text-align:center;font-size:15.5px;color:#4A554C;margin:0 0 40px;">The essentials before you buy. For everything else, see our <a href="../three-springs-farm-faq-page/faqs.html" style="font-weight:700;">full FAQs page</a>.</p>
     <div style="display:flex;flex-direction:column;gap:12px;">
       <div style="border:1px solid #E4DFD2;border-radius:14px;overflow:hidden;">
-        <button onClick="{{ toggleFaq1 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FAF8F2;border:none;cursor:pointer;padding:18px 22px;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:15.5px;color:#4D8D41;text-align:left;" style-hover="background:#F2EFE5;">
+        <button onClick="{{ toggleFaq1 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FFFFFF;border:none;cursor:pointer;padding:18px 22px;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:15.5px;color:#4D8D41;text-align:left;" style-hover="background:#F2EFE5;">
           How do I take Complete 3 Turmeric™?
           <span style="font-size:20px;color:#EEB11F;flex:none;">{{ faq1Icon }}</span>
         </button>
@@ -551,7 +634,7 @@ a:hover{color:#EEB11F;}
         </sc-if>
       </div>
       <div style="border:1px solid #E4DFD2;border-radius:14px;overflow:hidden;">
-        <button onClick="{{ toggleFaq2 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FAF8F2;border:none;cursor:pointer;padding:18px 22px;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:15.5px;color:#4D8D41;text-align:left;" style-hover="background:#F2EFE5;">
+        <button onClick="{{ toggleFaq2 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FFFFFF;border:none;cursor:pointer;padding:18px 22px;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:15.5px;color:#4D8D41;text-align:left;" style-hover="background:#F2EFE5;">
           Why choose a liquid extract over capsules or tablets?
           <span style="font-size:20px;color:#EEB11F;flex:none;">{{ faq2Icon }}</span>
         </button>
@@ -560,7 +643,7 @@ a:hover{color:#EEB11F;}
         </sc-if>
       </div>
       <div style="border:1px solid #E4DFD2;border-radius:14px;overflow:hidden;">
-        <button onClick="{{ toggleFaq3 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FAF8F2;border:none;cursor:pointer;padding:18px 22px;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:15.5px;color:#4D8D41;text-align:left;" style-hover="background:#F2EFE5;">
+        <button onClick="{{ toggleFaq3 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FFFFFF;border:none;cursor:pointer;padding:18px 22px;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:15.5px;color:#4D8D41;text-align:left;" style-hover="background:#F2EFE5;">
           Is Complete 3 Turmeric™ a TGA listed medicine?
           <span style="font-size:20px;color:#EEB11F;flex:none;">{{ faq3Icon }}</span>
         </button>
@@ -569,7 +652,7 @@ a:hover{color:#EEB11F;}
         </sc-if>
       </div>
       <div style="border:1px solid #E4DFD2;border-radius:14px;overflow:hidden;">
-        <button onClick="{{ toggleFaq4 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FAF8F2;border:none;cursor:pointer;padding:18px 22px;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:15.5px;color:#4D8D41;text-align:left;" style-hover="background:#F2EFE5;">
+        <button onClick="{{ toggleFaq4 }}" style="width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:#FFFFFF;border:none;cursor:pointer;padding:18px 22px;font-family:'Nunito Sans',sans-serif;font-weight:700;font-size:15.5px;color:#4D8D41;text-align:left;" style-hover="background:#F2EFE5;">
           Does it need black pepper added?
           <span style="font-size:20px;color:#EEB11F;flex:none;">{{ faq4Icon }}</span>
         </button>
@@ -579,7 +662,7 @@ a:hover{color:#EEB11F;}
       </div>
     </div>
     <p style="text-align:center;margin:32px 0 0;">
-      <a href="../three-springs-farm-faq-page/faqs.html" style="border:2px solid #4D8D41;color:#4D8D41;font-weight:700;font-size:14.5px;padding:12px 28px;border-radius:999px;display:inline-block;" style-hover="background:#4D8D41;color:#FFFFFF;">See all FAQs</a>
+      <a href="../three-springs-farm-faq-page/faqs.html" style="border:2px solid #4D8D41;color:#4D8D41;font-weight:700;font-size:14.5px;padding:12px 28px;border-radius:2px;display:inline-block;" style-hover="background:#4D8D41;color:#FFFFFF;">See all FAQs</a>
     </p>
   </div>
 </section>
@@ -617,7 +700,7 @@ a:hover{color:#EEB11F;}
       <div style="display:flex;flex-direction:column;gap:9px;font-size:14px;">
         <a href="#buy" style="color:#B9CBB0;" style-hover="color:#EEB11F;">My Account</a>
         <a href="#buy" style="color:#B9CBB0;" style-hover="color:#EEB11F;">Terms and Conditions</a>
-        <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;padding:10px 20px;border-radius:999px;display:inline-block;margin-top:6px;text-align:center;" style-hover="background:#D99C12;color:#1B2A1E;">Sign Up to Our Newsletter</a>
+        <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;padding:10px 20px;border-radius:2px;display:inline-block;margin-top:6px;text-align:center;" style-hover="background:#D99C12;color:#1B2A1E;">Sign Up to Our Newsletter</a>
       </div>
     </div>
   </div>
@@ -641,8 +724,8 @@ a:hover{color:#EEB11F;}
         </div>
       </div>
       <div style="display:flex;gap:10px;">
-        <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;font-size:14px;padding:11px 24px;border-radius:999px;" style-hover="background:#D99C12;color:#1B2A1E;">Buy Now</a>
-        <a href="#buy" style="border:2px solid #4D8D41;color:#4D8D41;font-weight:700;font-size:14px;padding:9px 22px;border-radius:999px;" style-hover="background:#4D8D41;color:#FFFFFF;">Subscribe and Save</a>
+        <a href="#buy" style="background:#EEB11F;color:#1B2A1E;font-weight:800;font-size:14px;padding:11px 24px;border-radius:2px;" style-hover="background:#D99C12;color:#1B2A1E;">Buy Now</a>
+        <a href="#buy" style="border:2px solid #4D8D41;color:#4D8D41;font-weight:700;font-size:14px;padding:9px 22px;border-radius:2px;" style-hover="background:#4D8D41;color:#FFFFFF;">Subscribe and Save</a>
       </div>
     </div>
   </div>
@@ -654,7 +737,7 @@ a:hover{color:#EEB11F;}
   &quot;stickyCta&quot;: {&quot;editor&quot;: &quot;boolean&quot;, &quot;default&quot;: true, &quot;section&quot;: &quot;Behaviour&quot;, &quot;tsType&quot;: &quot;boolean&quot;}
 }">
 class Component extends DCLogic {
-  state = { scrolled: false, faqOpen: -1 };
+  state = { scrolled: false, faqOpen: -1, tIndex: 0 };
 
   componentDidMount() {
     this._onScroll = () => {
@@ -681,6 +764,16 @@ class Component extends DCLogic {
       ctaGreen: cta === 'Deep green band',
       showStickyBar: (this.props.stickyCta ?? true) && this.state.scrolled,
     };
+    const T = 4;
+    const goTo = (i) => () => this.setState({ tIndex: ((i % T) + T) % T });
+    vals.tPrev = goTo(this.state.tIndex - 1);
+    vals.tNext = goTo(this.state.tIndex + 1);
+    for (let i = 0; i < T; i++) {
+      vals['tShow' + i] = this.state.tIndex === i;
+      vals['tDot' + i] = this.state.tIndex === i;
+      vals['tDotOff' + i] = this.state.tIndex !== i;
+      vals['tGo' + i] = goTo(i);
+    }
     for (let i = 1; i <= 4; i++) {
       vals['faq' + i + 'Open'] = this.state.faqOpen === i - 1;
       vals['faq' + i + 'Icon'] = this.state.faqOpen === i - 1 ? '\u2212' : '+';
